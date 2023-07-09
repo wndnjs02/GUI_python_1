@@ -1,1 +1,226 @@
+print('hello world') 
+print("hello world")
+print(1) 
+
+print(False)
+print(True)
+
+envelope1=10000
+envelope2=20000
+envelope3='파이팅'
+
+print(envelope1)
+print(envelope2)
+print(envelope3)
+
+name='1 minute'
+_name='python'
+
+name123='faster'
+_name_456='learn'
+
+name='1'
+my_name='2'
+
+int('2')
+int(float('2.5')) #'2.5'를 정수형으로 변환하는 법
+print(int(float('2.5')))
+float('1.5')
+str(2)
+
+print(5**2) #5의 거듭제곱 출력
+print(5/2) #5/2 결과값 출력
+print(5//2) #5//2 의 몫만 출력
+
+# 비교 연산자는 불리안으로 출력된다
+# 비교 연산 시에는 '부등호를 먼저' 써야 한다 
+print(5==2) #False 출력
+print(5!=2) #True 출력
+
+print(not 3<5) #False 출력
+print('c' in 'cat')
+print('c' not in 'cat')
+ 
+a='hello'
+b='     '
+c=''
+
+print(bool(a))
+
+print(bool(b))
+
+print(bool(c)) # 값이 없음 --> False
+
+print(bool(None)) #값이 없음 --> False
+
+'''이렇게 하면
+여러줄 코드를 주석 처리 가능!
+'''
+
+lang='PYTHON'
+print(lang[0])
+print(lang[5])
+print(lang[-1]) #마지막을 -1로도 설정 가능
+#슬라이싱
+print(lang[1:6])
+print(lang[1:])
+print(lang[:4]) #해당 위치의 직전까지만 출력
+print(lang[:])
+
+snack='꿀꽈배기'
+two='2개'
+
+juseyo=snack+two
+juseyo+='주세요'
+print(juseyo)
+
+num=3
+num+=2
+
+print(len(snack))
+
+snack='''꿀꽈배기는
+너무
+맛있어요'''
+
+print(snack)
+
+letter='how are YOU?'
+#모든 내용을 소문자로
+print(letter.lower())
+#모든 내용을 대문자로
+print(letter.upper())
+#첫 글자만 대문자로
+print(letter.capitalize())
+#각 단어들의 첫 글자만 대문자로
+print(letter.title())
+#대소문자 뒤바꾸기
+print(letter.swapcase())
+#문자열 나누기
+print(letter.split())
+#특정 문자가 몇 번 쓰였는지
+print(letter.count('how'))
+
+s='나도고등학교'
+#'나도'로 시작하는지
+print(s.startswith('나도')) #불리안 형태로 출력
+#'초등학교'로 끝나는지
+print(s.endswith('초등학교'))
+
+s='...나도고등학교...'
+#불필요한 문자 제거하기
+print(s.strip('.'))
+s='  나도고등학교 '
+print(s.strip()) # 빈칸으로 두면 공백 제거됨
+#특정 문자 바꾸기
+print(s.replace('고등학교','고교'))
+
+print(s.find('학교'))
+print(s.center(13,'-'))
+print(s.casefold())
+
+python='파이썬'
+java='자바'
+
+print(python, java)
+#개발 언어에는 파이썬, 자바 등이 있어요
+print('개발 언어에는 '+python+','+java+' 등이 있어요')
+print('개발 언어에는',python,',', java,'등이 있어요')
+
+print('개발 언어에는 {}, {} 등이 있어요'.format(python, java))
+print('개발 언어에는 {0}, {1} 등이 있어요'.format(python, java))
+print('개발 언어에는 {1}, {0} 등이 있어요'.format(python, java))
+print(f'개발 언어에는 {python}, {java} 등이 있어요')
+print('친구가 "파이썬 배우기 쉬워?" 하고 물었다.')
+print("나는 속으로 '엄청 어려운데...' 라고 생각했다.")
+#탈출문자
+print('하지만\'나만 당할 순 없지\'라는 생각에 \"엄청 쉽지\" 라고 했다')
+print('C:\\Users\\Name')
+snack='꿀꽈배기는\n너무\n맛있어요\n'
+print(snack)
+
+my_list=['오예스', '몽쉘', '초코파이','초코파이','초코파이' ]
+your_list=[1,2,3.14, True,False,'아무거나']
+empty_list=[] #빈 리스트
+
+print(my_list[0])
+print(my_list[0:2])
+print('몽쉘'in my_list)
+print(len(my_list))
+my_list[1]='몽쉘카카오'
+print(my_list)
+my_list.append('빅파이')
+print(my_list)
+my_list.remove('몽쉘카카오')
+print(my_list)
+my_list.extend(your_list)
+print(my_list)
+##리스트 메소드
+#insert() 원하는 위치에 추가
+#pop() 원하는 위치의 값 삭제
+#clear() 모든 값 삭제
+#sort() 값 순서대로 정렬
+#reverse() 순서 뒤집기
+#copy() 리스트 복사
+#count() 어떤 값이 몇 개 있는지
+#index() 어떤 값이 어디에 있는지
+
+ #튜플
+ #리스트와 다른 점은 수정 불가
+my_tuple=('오예스','몽쉘','초코파이') #패킹
+(pie1,pie2,pie3)=my_tuple #언패킹
+numbers=(1,2,3,4,5,6,7,8,9,10)
+(one,two,*others)=numbers #others는 리스트 형태
+(*others,nine,ten)=numbers
+print(numbers)
+print(others)
+
+#set, (중복 없음)
+A={'돈가스', '보쌈','제육덮밥'}
+B={'짬뽕', '초밥','제육덮밥'}
+print(A.intersection(B))
+print(A.union(B))
+print(A.difference(B))
+
+my_set={'돈가스', '보쌈','제육덮밥'}
+my_set.add('닭갈비')
+print(my_set)
+my_set.remove('제육덮밥')
+print(my_set)
+my_set.clear()
+print(my_set)
+# del my_set
+# print(my_set) #완전히 삭제되었으므로 오류 발생
+#set method
+# copy() 세트 복사
+# discard() 값 삭제(remove()와는 다르게 해당 값이 없어도 에러 발생X)
+# isdisjoint() 두 세트에 겹치는 값이 없는지 여부
+# issubset() 다른 세트의 부분집합인지 여부
+# issuperset() 다른 세트의 상위집합인지 여부
+# update() 다른 세트의 값들을 더함
+
+#(key,value), 추가 가능
+person={'name':'A','age':22,'height':170,'weight':'?'}
+print(person['name'])
+print(person['age'])
+
+print(person.get('nikname'))
+person['height']=180
+print(person['height'])
+person.update({'height': 170,'weight':'??'})
+print(person['height'])
+print(person['weight'])
+
+person.pop('weight')
+print(person)
+
+print(person.keys())
+print(person.values())
+print(person.items())
+person.clear()
+#fromkeys() 제공된 keys를 통해 새로운 딕셔너리 생성 및 반환
+#popitem() 마지막으로 추가된 데이터 삭제
+#setdefault() key에 해당하는 value 반환, key가 없다면 새로 만들고 default value 설정 및 반환
+
+
 
