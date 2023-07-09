@@ -205,6 +205,9 @@ print(person['name'])
 print(person['age'])
 
 print(person.get('nikname'))
+person.update({'nikname':'ACH'})
+print(person['nikname'])
+
 person['height']=180
 print(person['height'])
 person.update({'height': 170,'weight':'??'})
@@ -218,6 +221,7 @@ print(person.keys())
 print(person.values())
 print(person.items())
 person.clear()
+print(person)
 #fromkeys() 제공된 keys를 통해 새로운 딕셔너리 생성 및 반환
 #popitem() 마지막으로 추가된 데이터 삭제
 #setdefault() key에 해당하는 value 반환, key가 없다면 새로 만들고 default value 설정 및 반환
