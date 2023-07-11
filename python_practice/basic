@@ -226,5 +226,22 @@ print(person)
 #popitem() 마지막으로 추가된 데이터 삭제
 #setdefault() key에 해당하는 value 반환, key가 없다면 새로 만들고 default value 설정 및 반환
 
+my_tuple=('오예스','몽쉘')
+print(my_tuple)
+my_list=list(my_tuple)
+print(my_list)
+my_list.append('초코파이')
+print(my_list)
+my_tuple=tuple(my_list)
+print(my_tuple)
 
+my_list=['오예스','몽쉘','초코파이','초코파이','초코파이']
+my_set=set(my_list)
+my_list=list(my_set)
+print(my_set)
+ 
+my_list=['오예스','몽쉘','초코파이','초코파이','초코파이']
+my_dic=dict.fromkeys(my_list)
+print(my_dic)
+my_list=list(my_dic)
 
